@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>FlagMatchByWahidShafique</title>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" href="assets/icons/globe-20141001-favicon.ico" />
+</head>
+<body>
+    <div id="background"></div>
+    <div class="ui-container">
+        <div id="score-box">
+            Score: <span id="score">0</span>
+        </div>
+        <div id="time-box">
+            Timer: <span id="timer"></span>
+        </div>
+        <span id="quit-box"><a href="index.html">Quit</a></span>
+    </div>
+    <div id="board">
+        <div id="imageholder"></div>
+        <div class="main-text">
+            <div id="endbox">
+                <span id="end-header"></span><br />
+                <span id="misses">Misses: <span id="missScore"></span></span>
+                <span id="accuracy"> Accuracy: <span title="Average Score ranges from 30% to 40%" id="accuracyScore"></span>%</span>
+                <img src="assets/sep.png" />
+                <a href="index.html">Menu</a><br />
+                <a href="game.html">Replay</a>
+            </div>
+        </div>
+
+    </div>
+    <div id="nullboard"></div>
+    
+    <!--Audio-->
+    <audio id="world-track" autoplay loop>
+        <source src="assets/audio/world_track.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="incorrect">
+        <source src="assets/audio/incorrect.wav" type="audio/mpeg" />
+    </audio>
+    <audio id="correct">
+        <source src="assets/audio/correct.wav" type="audio/mpeg" />
+    </audio>
+    <audio id="lose-buzz">
+        <source src="assets//audio/lose_buzz.wav" type="audio/mpeg" />
+    </audio>
+    <audio id="win-buzz">
+        <source src="assets/audio/win_buzz.mp3" type="audio/mp3" />
+    </audio>
+    <div id="audio-button">
+        <img id="audio-icon" src="assets/icons/sound.png" />
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
